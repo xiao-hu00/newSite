@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OneWor-远程工作者社区</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/renzheng.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 导航条 -->
+<nav class="navbar navbar-default">
+  <div class="container">
+
+  	<!-- logo区域 -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">手机导航按钮</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+    </div>
+		
+		<!-- 导航按钮区域 -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">发现</a></li>
+        <li><a href="#">工作</a></li>
+        <li><a href="#">云协作</a></li>
+        <li><a href="#">Next one</a></li>
+        <li><a href="#">团队</a></li>
+      </ul>
+
+			<!-- 搜索框表单 -->
+      <form class="navbar-form navbar-left hidden-sm" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span></button>
+      </form>
+
+      <!-- 用户头像区域 -->
+      <div class="header text-right">
+        <a href="#"><img src="images/header.jpg">Monster</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="renzheng container">
+  <p class="title"><span>完善资料</span><span>填写详细个人信息，加入人才库</span></p>
+  <form class="content row" id="renzhengform" novalidate="novalidate">
+    <div class="header form-group has-feedback">
+      <img src="images/addheader.png" id="header">
+      <input type="file" name="uploadImg" id="uploadImg" onchange="setImagePreview('header','uploadImg')">
+      <span>添加头像</span>
+    </div>
+    <div class="input">
+      <div class="form-group has-feedback"><input type="text" name="email" id="" placeholder="邮箱"></div>
+      <div class="form-group has-feedback clearfix">
+        <span class="col-sm-4 col-xs-12">
+          <select name="gender" id="">
+            <option value="">性别</option>
+            <option value="1">男</option>
+            <option value="2">女</option>
+          </select>
+        </span>
+        <span class="col-sm-4 col-xs-12">
+          <select name="type" id="">
+            <option value="">远程类型</option>
+            <option value="21">远程类型1</option>
+            <option value="1">远程类型2</option>
+          </select>
+        </span>
+        <span class="col-sm-4 col-xs-12">
+          <select name="profession" id="">
+            <option value="">远程类型</option>
+            <option value="21">远程类型1</option>
+            <option value="12">远程类型2</option>
+          </select>
+        </span>
+      </div>
+      <div class="form-group has-feedback"><input type="tel" name="qqnumber" id="" placeholder="QQ"></div>
+      <div class="form-group has-feedback clearfix">
+        <span class="col-sm-4 col-xs-12">
+          <select name="sheng" id="">
+            <option value="">省</option>
+            <option value="1">黑龙江</option>
+            <option value="2">吉林</option>
+            <option value="3">辽宁</option>
+          </select>
+        </span>
+        <span class="col-sm-4 col-xs-12">
+          <select name="shi" id="">
+            <option value="">市</option>
+            <option value="2">沈阳</option>
+            <option value="1">抚顺</option>
+          </select>
+        </span>
+        <span class="col-sm-4 col-xs-12">
+          <select name="diqu" id="">
+            <option value="">地区</option>
+            <option value="1">地区1</option>
+            <option value="2">地区2</option>
+          </select>
+        </span>
+      </div>
+      <div class="form-group has-feedback">
+        <textarea name="summery" id="" placeholder="个人简介"></textarea>
+      </div>
+      <div class="form-group has-feedback">
+        <textarea name="experience" id="" placeholder="技术经验"></textarea>
+      </div>
+      
+      <div class="project-info">
+        <div class="one-project">
+          <p class="subtitle">项目经验</p>
+          <div class=" clearfix">
+            <span class="col-sm-6 col-xs-12 form-group has-feedback">
+              <input type="text" name="xiangmumingchegn" id="" placeholder="项目名称">
+            </span>
+            <span class="col-sm-6 col-xs-12 form-group has-feedback">
+              <input type="text" name="danrenzhiwu" id="" placeholder="担任职务">
+            </span>
+          </div>
+          <div class="form-group has-feedback clearfix">        
+            <span class="col-sm-6 col-xs-12">
+              <select name="starttime" id="">
+                <option>1998-01-01</option>
+                <option value="">1998-01-01</option>
+                <option value="2">1998-01-01</option>
+                <option value="3">1998-01-01</option>
+              </select>
+            </span>
+            <span class="col-sm-6 col-xs-12">
+              <select name="endtime" id="">
+                <option value="">地区</option>
+                <option value="1">地区1</option>
+                <option value="2">地区2</option>
+              </select>
+            </span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="text" name="zhanshi" id="" placeholder="展示链接">  
+          </div>
+          <div class="form-group has-feedback">
+            <textarea name="xiangmujingli" id="" placeholder="项目经历"></textarea>
+          </div>
+          
+        </div>
+      </div>
+      <p class="addjingyan">+添加一个项目经验</p>
+      <button>保存</button>
+    </div>
+  </form>
+</div>
+
+<!-- 底部 -->
+<div class="footer">
+	<div class="container">
+		<ul class="about clearfix">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">关于onework</a></li>
+			<li><a href="#">招贤纳士</a></li>
+			<li><a href="#">服务条款</a></li>
+			<li><a href="#">隐私策略</a></li>
+			<li><a href="#">帮助中心</a></li>
+		</ul>
+		<p class="subtitle"><span>友情链接:</span></p>
+		<ul class="friendlyLink clearfix">
+			<li><a href="#"><img src="images/link1.png"></a></li>
+			<li><a href="#"><img src="images/link2.png"></a></li>
+			<li><a href="#"><img src="images/link3.png"></a></li>
+			<li><a href="#"><img src="images/link4.png"></a></li>
+			<li><a href="#"><img src="images/link5.png"></a></li>
+			<li><a href="#"><img src="images/link6.png"></a></li>
+			<li><a href="#"><img src="images/link7.png"></a></li>
+		</ul>
+	</div>
+</div>
+<!-- 版权信息 -->
+<div class="copy">
+	<div class="container">
+		<p>Copyright &copy; 2015 - 京ICP备14019620号-2, All Rights Reserved One Work 版权所有 Support by OneWork</p>
+	</div>
+</div>
+
+</body>
+<script src="js/jquery-2.14.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myapp.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/bootstrapValidator.min.js"></script>
+<script type="text/javascript">  
+
+  // 上传图片部分
+  function setImagePreview(imgId,theInput) {  
+      var preview, img_txt, localImag, file_head = document.getElementById(theInput),  
+      picture = file_head.value;  
+      if (!picture.match(/.jpg|.gif|.png|.bmp/i)) 
+        return alert("您上传的图片格式不正确，请重新选择！")
+        ,$('.header > span').html('添加头像')
+        ,$('#header').attr('src','images/addheader.png')  
+        ,!1;  
+      if (preview = document.getElementById(imgId), file_head.files && file_head.files[0]){
+        preview.src = window.navigator.userAgent.indexOf("Chrome") >= 1 || window.navigator.userAgent.indexOf("Safari") >= 1 ? window.webkitURL.createObjectURL(file_head.files[0]) : window.URL.createObjectURL(file_head.files[0]);  
+        $('.header > span').html('点击头像进行替换');
+        return !0;
+      }
+          
+  }
+
+</script>  
+</html>
