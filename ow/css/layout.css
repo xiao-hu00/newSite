@@ -3,6 +3,206 @@ ul,li{list-style-type: none;margin: 0;padding: 0;}
 .copy .text-center{padding-left: 70px;}
 .mart20{margin-top: 20px;}
 
+body{
+	font-size: 12px;
+	background-color:#eeeff1;
+}
+/*修改 填坑的呢*/
+.header a{color: #666;}
+.header a:hover{color: #63ce83;}
+.navbar-nav > li > a:hover{color: #63ce83!important;}
+
+
+
+/* nav部分 */
+.navbar-brand{margin-right:30px;}
+.navbar-nav li{font-size:12px;}
+.navbar-brand img{display:inline-block;vertical-align:middle;}
+.navbar-form input{height:28px;border-radius:14px;}
+.navbar-form button{width:34px;height:26px;color:#888;overflow:hidden;padding:3px;position:relative;margin:0 0 0 -48px;border:none;}
+.navbar-form button:hover{color:#000;background-color:#fff;}
+.header{line-height:60px;}
+.header img{margin-right:10px;border-radius:50%;}
+.navbar-form{	/* margin-left:140px; */}
+
+/* footer部分 */
+.footer{width:100%;background-color:#fff;margin-top:200px;padding:25px 0;}
+.footer .subtitle span{border:1px solid #ccc;border-radius:4px;padding:1px 6px;color:#666;}
+.footer ul{padding-left:0;}
+.footer .about{padding:10px 0;}
+.footer .about li{margin-top:5px;margin-bottom:5px;}
+.footer li{list-style:none;float:left;margin:15px 45px 15px 0;}
+.footer li a{color:#666;}
+.footer li a:hover{color:#333;}
+.footer li img{height:35px;width:auto;}
+.copy{background-color:#30333a;padding:15px 0;position:relative;width:100%;bottom:0;}
+.copy p{color:#aaa;font-size:12px;line-height:12px;margin:0;}
+@media screen and (max-width:767px){
+	.navbar-form button{width:40%;height:26px;color:#888;overflow:hidden;padding:3px;position:relative;margin:0 0 0 30%;background-color:#abcdef;border-radius:14px;color:#fff;}
+	.footer li img{height:25px;width:auto;}
+	.nav li.active a{border-bottom:none!important;}
+	.header{text-align:center;}
+}
+label.error{font-size:12px;color:#f30;font-weight:normal;margin:0!important;}
+/************************************************************************************/
+
+/**认证 css**/
+/*修改的*/
+#uploadImg:hover{cursor:pointer;background:#63ce83;text-indent:-100px;opacity:0.1;}
+#uploadImg:focus{outline:none;}
+.renzheng p.addjingyan:hover{color:#333;}
+.subtitle > b{width:14px;height:14px;font-weight:normal;background:url(../images/close.png) no-repeat;display:inline-block;margin-left:10px;vertical-align:middle;cursor:pointer;}
+.renzheng{background:#fff;border-radius:5px;max-width:1000px;}
+.renzheng .title{border-radius:5px 5px 0 0;height:60px;line-height:60px;background-color:#f9fafa;border-bottom:1px solid #f1f1f1;padding:0 30px 0 60px;color:#555;margin-left:-15px;margin-right:-15px;}
+.renzheng .title span:first-child{font-size:18px;}
+.renzheng .title span:last-child{font-size:14px;float:right;}
+.renzheng .content{padding:40px 60px;}
+.renzheng .header input{width:68px;height:68px;position:absolute;opacity:0;margin-top:-68px;}
+.renzheng .header img{width:68px;height:68px;margin-right:30px;border-radius:0;}
+.renzheng .header{margin-bottom:10px;}
+.renzheng .header span{color:#666;}
+.renzheng textarea[name="experience"]{resize:none;}
+.renzheng .input{position:relative;}
+.renzheng .input input{width:100%;height:40px;border-radius:6px;border:1px solid #ccc;text-indent:.6em;margin:10px 0;}
+.has-error > input:focus{border-color:#a94442;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(169,68,66,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(169,68,66,.6);}
+.has-success > input:focus{border-color:#3c763d;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(60,118,61,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(60,118,61,.6);}
+.has-error input{border-color:#a94442!important;}
+.has-success input{border-color:#3c763d!important;}
+.has-success > span > i,.has-error > span > i{display:none!important;}
+.has-error > textarea:focus{border-color:#a94442;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(169,68,66,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(169,68,66,.6);}
+.has-success > textarea:focus{border-color:#3c763d;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(60,118,61,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(60,118,61,.6);}
+.has-error textarea{border-color:#a94442!important;}
+.has-success textarea{border-color:#3c763d!important;}
+.renzheng select{width:100%;height:40px;border-radius:6px;border:1px solid #ccc;text-indent:.6em;color:#555;margin-bottom:5px;}
+.renzheng span:first-child{padding-left:0;padding-right:0;}
+.renzheng span:last-child,.renzheng span:nth-child(2){padding-right:0;}
+.renzheng textarea{width:100%;height:100px;border-radius:6px;border:1px solid #ccc;padding:10px;margin:10px 0;resize:none;}
+.renzheng p.subtitle{margin-top:40px;color:#555;}
+.renzheng p.addjingyan{text-align:center;background-color:#ddd;line-height:40px;color:#999;border-radius:6px;margin:10px 0;cursor:pointer;}
+.renzheng button{display:block;width:180px;text-align:center;height:50px;line-height:50px;background-color:#63ce83;color:#fff;border-radius:6px;margin-top:30px;border:none;}
+.renzheng button:hover{background-color:#4dbe92;}
+.footer{margin-top:80px;}
+@media screen and (max-width:767px){
+	.renzheng{margin:20px;}
+	.renzheng .title{padding:0 20px;}
+	.renzheng .content{padding:30px 20px;}
+	.renzheng .header img{width:68px;height:68px;margin-right:30px;border-radius:0;}
+	.renzheng textarea[name="experience"]{margin-bottom:30px;}
+	.renzheng .input input{margin:10px 0;}
+	.renzheng .row{margin:0;}
+	.renzheng select{margin:10px 0;}
+	.renzheng span{padding:0}
+	.renzheng textarea{width:100%;height:100px;border-radius:6px;border:1px solid #ccc;padding:10px;margin:10px 0;}
+	.renzheng p.subtitle{color:#555;}
+	.renzheng button{width:280px;}
+}
+label.error{position:absolute;margin:20px 0 0 10px!important;}
+
+/*新增的*/
+.form-control-feedback{top:13px!important;}
+i.form-control-feedback.glyphicon.glyphicon-ok{color:#3c763d;}
+.help-block{margin-top:0;margin-bottom:0;}
+/************************************************************************************/
+
+/**注册 css register**/
+
+/*修改某人留下来的坑   请不要在意书写风格 相同的不用逗号节省，主要为了以后方便修改*/
+.mimaxiugai > button{width:150px;margin-top:15px;}
+.mimazhaohui > button{width:150px;margin-top:15px;}
+.mimazhaohui > p{margin-bottom:0!important;}
+.mimazhaohui > p > input{margin-bottom:15px;margin-top:15px;}
+.mimazhaohui > p > label{display:block;}
+
+/* 注册成功 */
+.register_ok{width:700px;background-color:#fff;padding:40px 30px 45px;position:relative;left:50%;top:50px;margin-left:-350px;}
+.register_ok p{font-size:12px;color:#7c8b8e;margin-bottom:20px;text-align:center;}
+.register_ok a{display:block;width:190px;border:none;height:40px;color:#fff;background-color:#63ce83;border-radius:4px;margin:25px auto 0;text-align:center;line-height:40px;}
+.register_ok a:hover{background-color:#4dbe92;}
+.footer{margin-top:440px;}
+
+/* 密码找回 */
+.mimazhaohui{width:700px;background-color:#fff;padding:40px 30px 45px;position:relative;left:50%;top:50px;margin-left:-350px;}
+.mimazhaohui p{font-size:16px;color:#7c8b8e;margin-bottom:20px;text-align:center;}
+.mimazhaohui p span{margin-right:10px;}
+.mimazhaohui p input{height:36px;border:1px solid #ddd;border-radius:6px;width:340px;}
+.mimazhaohui a{display:block;width:220px;border:none;height:40px;color:#fff;background-color:#63ce83;border-radius:4px;margin:25px auto 0;text-align:center;line-height:40px;}
+
+/* 密码修改 */
+.mimaxiugai{width:700px;background-color:#fff;padding:40px 30px 45px;position:relative;left:50%;top:50px;margin-left:-350px;}
+.mimaxiugai p{font-size:16px;color:#7c8b8e;margin-bottom:20px;text-align:center;}
+.mimaxiugai input{display:block;margin:15px auto 5px;height:38px;border:1px solid #ddd;border-radius:6px;width:340px;text-indent:.6em}
+.mimaxiugai a{display:block;width:340px;border:none;height:40px;color:#fff;background-color:#63ce83;border-radius:4px;margin:25px auto 0;text-align:center;line-height:40px;}
+
+/* 认证 */
+.renzheng{width:600px;background-color:#fff;padding:40px 100px 45px;position:relative;left:50%;top:50px;margin-left:-300px;}
+.renzheng h1{font-size:20px;text-align:center;color:#555;}
+.renzheng p{font-size:14px;text-align:center;color:#555;}
+.renzheng input[type="text"]{width:390px;display:block;margin:20px 0;height:40px;border-radius:6px;border:1px solid #ccc;text-indent:.6em;}
+.renzheng input.yanzhengma{width:260px;display:block;border-radius:6px 0 0 6px;}
+.renzheng .yzm{display:inline-block;width:130px;background-color:#333;height:40px;position:absolute;margin:-60px 0 0 260px;border-radius:0 6px 6px 0;line-height:40px;text-align:center;color:#fff;cursor:pointer;float:right;}
+.renzheng button{display:block;width:390px;text-align:center;background-color:#63ce83;color:#fff;font-size:18px;line-height:40px;border:none;}
+.renzheng button:hover{background-color:#4dbe92;}
+.renzheng label{text-align:left;display:block;margin-bottom:20px;line-height:16px;height:16px;font-weight:normal;padding-left:6px;}
+.renzheng label input{display:inline-block;vertical-align:bottom;margin-right:5px;}
+@media screen and (max-width:767px){
+
+	/* 注册成功 */
+	.register_ok{width:300px;margin-left:-150px;}
+
+	/* 密码找回 */
+	.mimazhaohui{width:300px;margin-left:-150px;}
+	.mimazhaohui p input{width:190px;}
+
+	/* 密码修改 */
+	.mimaxiugai{width:300px;margin-left:-150px;}
+	.mimaxiugai input{width:240px;}
+	.mimaxiugai a{width:240px;}
+
+	/* 认证 */
+	.renzheng{width:320px;padding:10px 20px 35px;margin-left:-160px;}
+	.renzheng input[type="text"]{width:280px;margin:10px 0;}
+	.renzheng button{width:280px;}
+	.renzheng input.yanzhengma{width:170px;display:block;border-radius:6px 0 0 6px;}
+	.renzheng .yzm{display:inline-block;width:110px;background-color:#333;height:40px;position:absolute;margin:-50px 0 0 170px;}
+}
+/************************************************************************************/
+
+/* 登陆部分 css */
+.login{width:480px;background-color:#fff;padding:45px 70px;position:relative;left:50%;top:50px;margin-left:-240px;}
+.login .title{font-size:18px;color:#7c8b8e;}
+.login input{width:340px;height:40px;margin:15px 0 5px;text-indent:.6em;border:1px solid #ccc;border-radius:4px;}
+.login button{width:340px;border:none;height:40px;color:#fff;background-color:#63ce83;border-radius:4px;margin:20px 0;}
+button:hover{background-color:#4dbe92;}
+.login .login_about p{text-align:center;}
+.login .login_about p a{margin:0 15px;color:#888;}
+.login .other_login{width:270px;padding-left:70px;margin:30px 0 20px;}
+.login .other_login:after{content:"";display:block;overflow:hidden;clear:both;}
+.login .other_login li{float:left;width:25.3%;margin:0 4%;list-style:none;}
+.login .other_login img{display:block;margin:0 auto;width:90%;border-radius:50%;background-color:#444;}
+
+/* 注册部分 */
+.register{width:400px;background-color:#fff;padding:40px 30px 45px;position:relative;left:50%;top:50px;margin-left:-200px;}
+.register .title{font-size:18px;color:#7c8b8e;margin-bottom:20px;text-align:center;}
+.register input{width:340px;height:40px;margin:10px 0;text-indent:.6em;border:1px solid #ccc;border-radius:4px;}
+.register button{width:340px;border:none;height:40px;color:#fff;background-color:#63ce83;border-radius:4px;margin-top:25px;}
+button:hover{background-color:#4dbe92;}
+@media screen and (max-width:767px){
+
+	/* 登陆部分 */
+	.login{width:320px;background-color:#fff;padding:25px 20px;position:relative;left:50%;top:50px;margin-left:-160px;}
+	.login .title{font-size:18px;color:#7c8b8e;margin-bottom:20px;}
+	.login input{width:280px;height:40px;margin:15px 0 5px;text-indent:.6em;border:1px solid #ccc;border-radius:4px;}
+	.login button{width:280px;border:none;height:40px;color:#fff;background-color:#63ce83;border-radius:4px;margin:20px 0;}
+	.login .login_about{display:none;}
+
+	/* 注册部分 */
+	.register{width:320px;padding:30px 30px 35px;margin-left:-160px;}
+	.register .title{margin-bottom:20px;}
+	.register input{width:260px;margin:10px 0;}
+	.register button{width:260px;margin-top:15px;}
+}
+/************************************************************************************/
+
 
 /****
 	交流页面css begin
@@ -239,7 +439,7 @@ ul,li{list-style-type: none;margin: 0;padding: 0;}
 ****/
 
 /****
-	招聘 css begin
+	招聘 招聘详情 css begin
 ****/
 .recruit-nav{width: 100%;background: #fff;line-height: 43px;min-height: 43px;overflow: hidden;}
 .recruit-nav ul{}
@@ -260,9 +460,33 @@ ul,li{list-style-type: none;margin: 0;padding: 0;}
 .recruit-list > li > .unit-c > p{color: #333;font-size: 16px;padding-top: 10px;margin-bottom: 0;font-weight: 400;}
 .recruit-list > li > .unit-c > p > a{color: #333;font-size: 16px;padding-top: 10px;margin-bottom: 0;font-weight: 700;}
 .recruit-list > li > .unit-c > p > a:hover{color: #63ce83;}
+
+.recruit-detail-title{background: #fafafa;min-height: 89px;border-bottom: 1px solid #f6f7f7;height: auto;overflow: hidden;padding-left: 30px;border-radius: 5px 5px 0 0;}
+.recruit-detail-title > span{font-size: 18px;font-weight: 700;float: left;margin-top: 31px;}
+.recruit-detail-title > a{font-size: 16px;color: #fff;float: right;background: #333;border-radius: 5px;padding: 5px 10px;margin-top: 29px;margin-right: 30px;margin-bottom: 10px;}
+.recruit-detail-title > a:hover{background: #63ce83;}
+.recruit-detail > .personal-infomation{border-radius: 0px;color: #333;}
+.recruit-detail-content > .b > p > span{margin-top: 0px;}
+.recruit-detail-content > .a{margin-top: 0;}
+.recruit-detail-content > .a label{font-weight: 400;}
+.recruit-detail-content > .c label{font-weight: 400;}
+.recruit-detail-content > .b > p{margin-bottom: 0;}
+.recruit-detail-content > .c > p{margin-bottom: 0;}
+.recruit-detail-content > .unit-d{font-size: 14px;margin-top: 30px;margin-bottom: 30px;font-weight: 700;}
+.recruit-siade .personal-photo > img{width: 54px;height: 54px;}
+.recruit-detail-content{font-size: 14px;}
+.recruit-conpany{margin-top: 15px;}
+.recruit-conpany > p{margin-bottom: 0;}
+.recruit-small-list > p{color: #999;}
+.recruit-small-list > ul > li{border-bottom: 1px solid #e6e6e6;padding-bottom: 10px;margin-bottom: 10px;overflow: hidden;}
+.recruit-small-list > ul > li:last-child{border-bottom: none;padding-bottom: 10px;}
+.recruit-small-info > p{margin-bottom: 0;margin-top: 3px;color: #666;}
+.recruit-small-info > a{color: #333;}
+.recruit-small-info > a:hover{color: #63ce83;}
 /****
-	招聘 css end
+	招聘 招聘详情 css end
 ****/
+
 
 
 /****
