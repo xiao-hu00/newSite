@@ -19,7 +19,7 @@ body{
 .navbar-nav li{font-size:12px;}
 .navbar-brand img{display:inline-block;vertical-align:middle;}
 .navbar-form input{height:28px;border-radius:14px;}
-.navbar-form button{width:34px;height:26px;color:#888;overflow:hidden;padding:3px;position:relative;margin:0 0 0 -48px;border:none;}
+.navbar-form button{width:20px;height:26px;color:#888;overflow:hidden;padding:3px;position:relative;margin-left: -33px;border:none;}
 .navbar-form button:hover{color:#000;background-color:#fff;}
 .header{line-height:60px;}
 .header img{margin-right:10px;border-radius:50%;}
@@ -50,20 +50,20 @@ label.error{font-size:12px;color:#f30;font-weight:normal;margin:0!important;}
 /*修改的*/
 #uploadImg:hover{cursor:pointer;background:#63ce83;text-indent:-100px;opacity:0.1;}
 #uploadImg:focus{outline:none;}
-.renzheng p.addjingyan:hover{color:#333;}
+.attestation p.addjingyan:hover{color:#333;}
 .subtitle > b{width:14px;height:14px;font-weight:normal;background:url(../images/close.png) no-repeat;display:inline-block;margin-left:10px;vertical-align:middle;cursor:pointer;}
-.renzheng{background:#fff;border-radius:5px;max-width:1000px;}
-.renzheng .title{border-radius:5px 5px 0 0;height:60px;line-height:60px;background-color:#f9fafa;border-bottom:1px solid #f1f1f1;padding:0 30px 0 60px;color:#555;margin-left:-15px;margin-right:-15px;}
-.renzheng .title span:first-child{font-size:18px;}
-.renzheng .title span:last-child{font-size:14px;float:right;}
-.renzheng .content{padding:40px 60px;}
-.renzheng .header input{width:68px;height:68px;position:absolute;opacity:0;margin-top:-68px;}
-.renzheng .header img{width:68px;height:68px;margin-right:30px;border-radius:0;}
-.renzheng .header{margin-bottom:10px;}
-.renzheng .header span{color:#666;}
-.renzheng textarea[name="experience"]{resize:none;}
-.renzheng .input{position:relative;}
-.renzheng .input input{width:100%;height:40px;border-radius:6px;border:1px solid #ccc;text-indent:.6em;margin:10px 0;}
+.attestation{background:#fff;border-radius:5px;max-width:1000px;}
+.attestation .title{border-radius:5px 5px 0 0;height:60px;line-height:60px;background-color:#f9fafa;border-bottom:1px solid #f1f1f1;padding:0 30px 0 60px;color:#555;margin-left:-15px;margin-right:-15px;}
+.attestation .title span:first-child{font-size:18px;}
+.attestation .title span:last-child{font-size:14px;float:right;}
+.attestation .content{padding:40px 60px;}
+.attestation .header input{width:68px;height:68px;position:absolute;opacity:0;margin-top:-68px;}
+.attestation .header img{width:68px;height:68px;margin-right:30px;border-radius:0;}
+.attestation .header{margin-bottom:10px;}
+.attestation .header span{color:#666;}
+.attestation textarea[name="experience"]{resize:none;}
+.attestation .input{position:relative;}
+.attestation .input input{width:100%;height:40px;border-radius:6px;border:1px solid #ccc;text-indent:.6em;margin:10px 0;}
 .has-error > input:focus{border-color:#a94442;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(169,68,66,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(169,68,66,.6);}
 .has-success > input:focus{border-color:#3c763d;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(60,118,61,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(60,118,61,.6);}
 .has-error input{border-color:#a94442!important;}
@@ -73,28 +73,28 @@ label.error{font-size:12px;color:#f30;font-weight:normal;margin:0!important;}
 .has-success > textarea:focus{border-color:#3c763d;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(60,118,61,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(60,118,61,.6);}
 .has-error textarea{border-color:#a94442!important;}
 .has-success textarea{border-color:#3c763d!important;}
-.renzheng select{width:100%;height:40px;border-radius:6px;border:1px solid #ccc;text-indent:.6em;color:#555;margin-bottom:5px;}
-.renzheng span:first-child{padding-left:0;padding-right:0;}
-.renzheng span:last-child,.renzheng span:nth-child(2){padding-right:0;}
-.renzheng textarea{width:100%;height:100px;border-radius:6px;border:1px solid #ccc;padding:10px;margin:10px 0;resize:none;}
-.renzheng p.subtitle{margin-top:40px;color:#555;}
-.renzheng p.addjingyan{text-align:center;background-color:#ddd;line-height:40px;color:#999;border-radius:6px;margin:10px 0;cursor:pointer;}
-.renzheng button{display:block;width:180px;text-align:center;height:50px;line-height:50px;background-color:#63ce83;color:#fff;border-radius:6px;margin-top:30px;border:none;}
-.renzheng button:hover{background-color:#4dbe92;}
+.attestation select{width:100%;height:40px;border-radius:6px;border:1px solid #ccc;text-indent:.6em;color:#555;margin-bottom:5px;}
+.attestation span:first-child{padding-left:0;padding-right:0;}
+.attestation span:last-child,.attestation span:nth-child(2){padding-right:0;}
+.attestation textarea{width:100%;height:100px;border-radius:6px;border:1px solid #ccc;padding:10px;margin:10px 0;resize:none;}
+.attestation p.subtitle{margin-top:40px;color:#555;}
+.attestation p.addjingyan{text-align:center;background-color:#ddd;line-height:40px;color:#999;border-radius:6px;margin:10px 0;cursor:pointer;}
+.attestation button{display:block;width:180px;text-align:center;height:50px;line-height:50px;background-color:#63ce83;color:#fff;border-radius:6px;margin-top:30px;border:none;}
+.attestation button:hover{background-color:#4dbe92;}
 .footer{margin-top:80px;}
 @media screen and (max-width:767px){
-	.renzheng{margin:20px;}
-	.renzheng .title{padding:0 20px;}
-	.renzheng .content{padding:30px 20px;}
-	.renzheng .header img{width:68px;height:68px;margin-right:30px;border-radius:0;}
-	.renzheng textarea[name="experience"]{margin-bottom:30px;}
-	.renzheng .input input{margin:10px 0;}
-	.renzheng .row{margin:0;}
-	.renzheng select{margin:10px 0;}
-	.renzheng span{padding:0}
-	.renzheng textarea{width:100%;height:100px;border-radius:6px;border:1px solid #ccc;padding:10px;margin:10px 0;}
-	.renzheng p.subtitle{color:#555;}
-	.renzheng button{width:280px;}
+	.attestation{margin:20px;}
+	.attestation .title{padding:0 20px;}
+	.attestation .content{padding:30px 20px;}
+	.attestation .header img{width:68px;height:68px;margin-right:30px;border-radius:0;}
+	.attestation textarea[name="experience"]{margin-bottom:30px;}
+	.attestation .input input{margin:10px 0;}
+	.attestation .row{margin:0;}
+	.attestation select{margin:10px 0;}
+	.attestation span{padding:0}
+	.attestation textarea{width:100%;height:100px;border-radius:6px;border:1px solid #ccc;padding:10px;margin:10px 0;}
+	.attestation p.subtitle{color:#555;}
+	.attestation button{width:280px;}
 }
 label.error{position:absolute;margin:20px 0 0 10px!important;}
 
@@ -205,13 +205,16 @@ button:hover{background-color:#4dbe92;}
 
 
 /****
-	交流页面css begin
+	交流页面 css begin
 ****/
 
 .exchange-head > ul{width: 100%;min-height: 40px;background-color: #fff;height: auto;overflow: hidden;padding-left: 10px;}
 .exchange-head > ul > li{line-height: 40px;padding:0 14px;float: left;}
 .exchange-head > ul > li > a{color: #666666;}
 .exchange-head > ul > li > a:hover{color: #63ce83;}
+.exchange-head > ul > li.act > a{color: #63ce83;}
+.exchange-head > ul > li > span{display: none;}
+.exchange-head > ul > li.act > span{position: absolute;height: 12px;font-size: 12px;margin-top: 36px;color: #fff;display: block;}
 
 .exchange{padding-right: 40px;margin-top: 10px;}
 .exchange-hot{background: #fff;border: 1px solid #f0f5f6;margin-top: 20px;}
@@ -234,16 +237,15 @@ button:hover{background-color:#4dbe92;}
 .more-exchange{text-align: center;background: #fff;border: 1px solid #f0f5f6;height: 40px;line-height: 40px;width: 100%;font-size: 12px;color: #999;display: block;margin-top: 20px;margin-bottom: 20px;}
 .more-exchange:hover{color: #63ce83;}
 
-.exchange-side{margin-top: 10px;}
-.personal-info{border: 1px solid #f0f0f0;background-color: #fff;padding: 20px;overflow: hidden;width: 100%;margin-bottom: 20px;}
+.exchange-side{margin-top: 10px;border: 1px solid #f0f0f0;padding: 0;}
+.personal-info{overflow: hidden;width: 100%;margin-bottom: 20px;background: #fff;padding: 20px;}
 .personal-photo > img{border: 1px solid #f0f5f6;float: left;margin-right: 10px;}
 .personal-name{float: left;}
 .personal-name > h2{color: #333;font-size: 14px;margin-top: 10px;}
 .personal-name > p > span{color: #333;font-size: 12px;float: left;}
 .three-info{margin-top: 5px;border-bottom: 1px solid #f3f3f3;padding-bottom: 20px;margin-bottom: 20px;}
-.three-info > div{float: left;min-width: 65px;width: 30%;text-align: center;color: #9ca2a2;border: 1px solid #f5f5f5;margin: 0 1.5%;box-sizing:border-box;-moz-box-sizing:border-box;border-radius: 5px;padding-top: 5px;margin-top: 10px;}
-.three-info > div:first-child{margin-left: 0;}
-.three-info > div > span{font-size: 20px;}
+.three-info > ul > li{float: left;width: 30%;text-align: center;color: #9ca2a2;border: 1px solid #f5f5f5;margin: 0 1.66%;box-sizing:border-box;-moz-box-sizing:border-box;border-radius: 5px;padding-top: 5px;margin-top: 10px;}
+.three-info > ul > li > span{font-size: 20px;}
 
 .side_banner img{max-width: 300px;width: 100%;}
 
@@ -258,12 +260,29 @@ button:hover{background-color:#4dbe92;}
 .personal-info > .c > a:hover{color: #63ce83;}
 
 @media screen and (max-width:768px){
-.exchange{padding-right: 15px;}
+	.exchange{padding-right: 15px;}
+	.exchange-side{margin-left: 15px;margin-right: 15px;}
 }
+@media screen and (max-width:410px){
+	.exchange-head > ul > li.act > span{display: none;}
+}
+/********** 交流页面 2 **********/
 
+.list-info{}
+.list-info > .unit-a{background: #fff;padding: 20px;}
+.list-info > .unit-a > ul > li{float: left;text-align: center;width: 33.3333%;border-left: 1px solid #ebebeb;}
+.list-info > .unit-a > ul > li:first-child{border-left: none;}
+.list-info > .unit-a > ul > li > span{font-size: 20px;color: #f6726b;}
+.list-info > .unit-a > ul > li > p{margin-bottom: 0;text-align: center;}
+.list-info > .unit-b{width: 100%;width: 100%;margin-top: 20px;margin-bottom: 20px;border-radius: 3px;height: 40px;}
+.list-info > .unit-c > ul{background: #fff;overflow: hidden;height: 40px;border-radius: 3px;position: relative;}
+.list-info > .unit-c > ul > li{float: left;width: 27%;text-align: center;line-height: 40px;margin: 0 3.16666%;}
+.list-info > .unit-c > .line{width: 27%;height: 2px;position: absolute;background: #5cb85c;bottom: 0;left: 3.16666%;}
 /****
-	交流页面css end
+	交流 页面css end
 ****/
+
+
 
 /****
 	文章交流内页css begin

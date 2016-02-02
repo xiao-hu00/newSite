@@ -25,6 +25,26 @@ $(function(){//操作DOM，内页左边的菜单图标
 	});
 });
 
+$(function(){//操作DOM，交流页面2 中间部分导航效果
+    var t = $('.exchange-head > ul > li > a');
+    var lf = $('.exchange-head > ul > li').first().width()/2 - 6;
+    if(!!t){
+        t.next().css('margin-left',lf);
+    }
+    t.on("click",function(){
+        var li = $(this).parent('li');
+        li.siblings().removeClass("act");
+        li.addClass("act");
+        li.find('span').css('margin-left',li.width()/2 - 6);
+    });
+
+    var tt = $('.list-info > .unit-c > ul > li');
+    var line = $('.list-info > .unit-c > .line');
+    tt.on('click',function(){
+        line.stop().animate({'left':$(this).index()*33.3333333+3.16666+'%'},200);
+    });
+});
+
 $(function(){//操作DOM 个人终极，点击回复
 	var t = $('.my-message .c > .d');
 	t.on('click',function(){
