@@ -38,10 +38,16 @@ $(function(){//操作DOM，交流页面2 中间部分导航效果
         li.find('span').css('margin-left',li.width()/2 - 6);
     });
 
+    //右边tab切换
     var tt = $('.list-info > .unit-c > ul > li');
     var line = $('.list-info > .unit-c > .line');
+    var width = tt.find('span').width();
+    line.width(width);
+    line.css('left',tt.first().find('span').position().left);
     tt.on('click',function(){
-        line.stop().animate({'left':$(this).index()*33.3333333+3.16666+'%'},200);
+        var left = $(this).find('span').position().left;
+        $('.list-info > .unit-d').eq($(this).index()).addClass('act').siblings().removeClass('act');
+        line.stop().animate({'left':left},150);
     });
 });
 
