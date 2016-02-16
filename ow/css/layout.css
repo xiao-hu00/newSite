@@ -6,6 +6,7 @@ ul,li{list-style-type: none;margin: 0;padding: 0;}
 body{
 	font-size: 12px;
 	background-color:#eeeff1;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 /*修改 填坑的呢*/
 .header a{color: #666;}
@@ -23,10 +24,10 @@ body{
 .navbar-form button:hover{color:#000;background-color:#fff;}
 .header{line-height:60px;}
 .header img{margin-right:10px;border-radius:50%;}
-.navbar-form{	/* margin-left:140px; */}
+.navbar-form{text-align: center;}
 
 /* footer部分 */
-.footer{width:100%;background-color:#fff;margin-top:200px;padding:25px 0;}
+.footer{width:100%;background-color:#fff;padding:25px 0;}
 .footer .subtitle span{border:1px solid #ccc;border-radius:4px;padding:1px 6px;color:#666;}
 .footer ul{padding-left:0;}
 .footer .about{padding:10px 0;}
@@ -38,7 +39,7 @@ body{
 .copy{background-color:#30333a;padding:15px 0;position:relative;width:100%;bottom:0;}
 .copy p{color:#aaa;font-size:12px;line-height:12px;margin:0;}
 @media screen and (max-width:767px){
-	.navbar-form button{width:40%;height:26px;color:#888;overflow:hidden;padding:3px;position:relative;margin:0 0 0 30%;background-color:#abcdef;border-radius:14px;color:#fff;}
+	.navbar-form button{height:26px;color:#888;overflow:hidden;padding:3px;position:relative;background-color:#abcdef;border-radius:14px;color:#fff;width: 120px;}
 	.footer li img{height:25px;width:auto;}
 	.nav li.active a{border-bottom:none!important;}
 	.header{text-align:center;}
@@ -81,7 +82,7 @@ label.error{font-size:12px;color:#f30;font-weight:normal;margin:0!important;}
 .attestation p.addjingyan{text-align:center;background-color:#ddd;line-height:40px;color:#999;border-radius:6px;margin:10px 0;cursor:pointer;}
 .attestation button{display:block;width:180px;text-align:center;height:50px;line-height:50px;background-color:#63ce83;color:#fff;border-radius:6px;margin-top:30px;border:none;}
 .attestation button:hover{background-color:#4dbe92;}
-.footer{margin-top:80px;}
+.footer{margin-top:200px;}
 @media screen and (max-width:767px){
 	.attestation{margin:20px;}
 	.attestation .title{padding:0 20px;}
@@ -94,7 +95,8 @@ label.error{font-size:12px;color:#f30;font-weight:normal;margin:0!important;}
 	.attestation span{padding:0}
 	.attestation textarea{width:100%;height:100px;border-radius:6px;border:1px solid #ccc;padding:10px;margin:10px 0;}
 	.attestation p.subtitle{color:#555;}
-	.attestation button{width:280px;}
+	.attestation button{width:100px;}
+	.navbar-header{padding: 0 20px;}
 }
 label.error{position:absolute;margin:20px 0 0 10px!important;}
 
@@ -118,7 +120,7 @@ i.form-control-feedback.glyphicon.glyphicon-ok{color:#3c763d;}
 .register_ok p{font-size:12px;color:#7c8b8e;margin-bottom:20px;text-align:center;}
 .register_ok a{display:block;width:190px;border:none;height:40px;color:#fff;background-color:#63ce83;border-radius:4px;margin:25px auto 0;text-align:center;line-height:40px;}
 .register_ok a:hover{background-color:#4dbe92;}
-.footer{margin-top:440px;}
+
 
 /* 密码找回 */
 .mimazhaohui{width:700px;background-color:#fff;padding:40px 30px 45px;position:relative;left:50%;top:50px;margin-left:-350px;}
@@ -535,9 +537,31 @@ button:hover{background-color:#4dbe92;}
 	邮箱验证 css end
 ****/
 
+/***导航页面 begin***/
+.navigation-title{height: 115px;width: 100%;background: #fff;text-align: center;margin-top: -20px;border-bottom: 1px solid #e7e7e7;}
+.navigation-title > p{padding-top: 32px;font-size: 20px;color: #333333;margin-bottom: 0;}
+.navigation-title > a{color: #2e8edb;}
+.navigation-title > a:hover{color: #63ce83;}
+.navigation-nav{margin: 20px 0;}
+.navigation-nav > ul > li{float: left;margin-right: 10px;line-height: 30px;}
+.navigation-nav > ul > li > a{color: #333333;font-size: 14px;padding: 2px 7px;border-radius: 3px;}
+.navigation-nav > ul > li > a.act{color: #fff;background: #5ecf80;}
+.navigation-nav > ul > li > a:hover{color: #fff;background: #5ecf80;}
+.navigation-info{border-radius: 3px;margin-bottom: 30px;}
+.navigation-info > p{padding: 10px;margin-bottom: 0;font-size: 16px;color: #333;background: #fff;}
+.navigation-info > div{color: #333;height: 70px;padding: 10px;background: #fff;}
+.navigation-info > a{border-bottom: 1px solid #f0f0f0;border-top: 1px solid #f0f0f0;display: block;}
+
+/***导航页面 end***/
+
 /*** 媒体查询 部分css**/
 @media screen and (max-width:767px){
 	.modify-article{width: 90%;}
+	.navigation-info{max-width: 551px;margin: 30px auto;}
+	.navigation-nav > ul > li:first-child{margin-left: 10px;}
+}
+@media screen and (max-width:560px){
+	.navigation-info{margin: 30px 10px;}
 }
 
 

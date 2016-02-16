@@ -43,7 +43,9 @@ $(function(){//操作DOM，交流页面2 中间部分导航效果
     var line = $('.list-info > .unit-c > .line');
     var width = tt.find('span').width();
     line.width(width);
-    line.css('left',tt.first().find('span').position().left);
+    if(line.length > 0){
+        line.css('left',tt.first().find('span').position().left);
+    }
     tt.on('click',function(){
         var left = $(this).find('span').position().left;
         $('.list-info > .unit-d').eq($(this).index()).addClass('act').siblings().removeClass('act');
