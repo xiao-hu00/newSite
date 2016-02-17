@@ -17,7 +17,7 @@ body{
 
 /* nav部分 */
 .navbar-brand{margin-right:30px;}
-.navbar-nav li{font-size:12px;}
+.navbar-nav li{font-size:15px;}
 .navbar-brand img{display:inline-block;vertical-align:middle;}
 .navbar-form input{height:28px;border-radius:14px;}
 .navbar-form button{width:20px;height:26px;color:#888;overflow:hidden;padding:3px;position:relative;margin-left: -33px;border:none;}
@@ -212,7 +212,7 @@ button:hover{background-color:#4dbe92;}
 
 .exchange-head > ul{width: 100%;min-height: 40px;background-color: #fff;height: auto;overflow: hidden;padding-left: 10px;}
 .exchange-head > ul > li{line-height: 40px;padding:0 14px;float: left;}
-.exchange-head > ul > li > a{color: #666666;}
+.exchange-head > ul > li > a{color: #666666;font-size: 14px;}
 .exchange-head > ul > li > a:hover{color: #63ce83;}
 .exchange-head > ul > li.act > a{color: #63ce83;}
 .exchange-head > ul > li > span{display: none;}
@@ -276,7 +276,7 @@ button:hover{background-color:#4dbe92;}
 .list-info > .unit-a > ul > li:first-child{border-left: none;}
 .list-info > .unit-a > ul > li > span{font-size: 20px;color: #f6726b;}
 .list-info > .unit-a > ul > li > p{margin-bottom: 0;text-align: center;}
-.list-info > .unit-b{width: 100%;width: 100%;margin-top: 20px;margin-bottom: 20px;border-radius: 3px;height: 40px;}
+.list-info > .unit-b{width: 100%;width: 100%;margin-top: 20px;margin-bottom: 20px;border-radius: 3px;line-height: 26px;}
 .list-info > .unit-c{position: relative;margin-bottom: 20px;}
 .list-info > .unit-c > ul{background: #fff;overflow: hidden;height: 40px;border-radius: 3px;}
 .list-info > .unit-c > ul > li{float: left;width: 27%;text-align: center;line-height: 40px;margin: 0 3.16666%;cursor: pointer;}
