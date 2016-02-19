@@ -10,7 +10,7 @@ $(function(){//操作文本域的，评论
 	});
 });
 
-$(function(){//操作DOM，内页左边的菜单图标
+$(function(){//操作DOM，内页左边的菜单图标  个人设置页面
 	var t = $('.left-nav ul > li > span'),d = $('.nav-title-tip');
 	t.hover(function(){		
 		var i = $(this).parent().index()+1;
@@ -23,6 +23,21 @@ $(function(){//操作DOM，内页左边的菜单图标
 		t.eq(i-1).css('background','url(images/'+i+'.png) center center no-repeat #30333a');
 		d.stop().animate({opacity:"0"},100);
 	});
+    t.on('click',function(){//左侧菜单点击，加载相应的html页面
+        var m = $(this).attr('data-src');
+        console.log('./'+m+'.html');
+        $('#'+m).load('./'+m+'.html');
+    });
+});
+
+$(function(){//左边菜单点击   个人设置页面
+    var t = $('.left-nav > ul > li');
+    var s = $('.left-nav > ul > li span');
+    s.on("click",function(){
+        var i = $(this).attr('data-src');
+        $('.modify-article').hide();
+        $('#'+i).show();        
+    });
 });
 
 $(function(){//操作DOM，交流页面2 中间部分导航效果
@@ -95,14 +110,15 @@ $(function(){//操作文本域的，发送站内信
 	});
 });
 
-$(function(){//左边菜单点击
-    var t = $('.left-nav > ul > li');
-    var s = $('.left-nav > ul > li span');
-    s.on("click",function(){
-        var i = $(this).attr('data-src');
-        $('.modify-article').hide();
-        $('#'+i).show();        
-    });
+$(function(){//认证用户列表相关js
+    var t = $('.user-list-one > div').parent().height();
+    if($(window).width()>768){
+        $('.user-list-one > div').eq(1).height(t);
+    }
+    else{
+        $('.user-list-one > div > div').css('position','static');
+    }
+    
 });
 
 $(function() {
