@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:"Error: Invalid CSS after \"#00ff00\": expected expression (e.g. 1px, bold), was \";\"\A         on line 2 of /Users/xiao_hu/Downloads/onework/ow/css/layout.sass\A \A 1: #main p {\A 2:   color: #00ff00;\A 3:   width: 97%;\A 4: \A 5:   .redbox {\A 6:     background-color: #ff0000;\A 7:     color: #000000;"}
