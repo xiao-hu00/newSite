@@ -573,9 +573,11 @@ button:hover{background-color:#4dbe92;}
 
 /**修改密码 begin**/
 .change-pwd{max-width: 724px;background: #fff;text-align: center;color: #969b9d;}
-.change-pwd-con{width: 50%;margin: 0 auto;height: auto;}
+.change-pwd-con{width: 50%;margin: 0 auto!important;height: auto;}
 .change-pwd-con > input{width: 100%;margin-top: 30px;margin-bottom: 0;height: 40px;border-radius: 5px;border: 1px solid #e9ecee;font-size: 14px;padding: 0 10px;}
 .change-pwd-con > input:focus{outline: none;}
+.change-pwd-con > i{margin-top: 20px;margin-right: -13px;}
+.change-pwd-con > small{margin-top: 10px;}
 .change-submint{width: 50%;margin: 30px 0;}
 /**修改密码 end**/
 

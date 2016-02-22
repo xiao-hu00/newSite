@@ -37,11 +37,11 @@
 						</ul>
 						<div class="clearfix"></div>
 						<div class="change-pwd">
-							<form class="content">
-								<div class="form-group has-feedback change-pwd-con"><input class="" type="pwd" name="" placeholder="旧密码"></div>
-								<div class="form-group has-feedback change-pwd-con"><input class="" type="pwd" name="" placeholder="新密码"></div>
-								<div class="form-group has-feedback change-pwd-con"><input class="" type="pwd" name="" placeholder="确认新密码"></div>
-								<a href="#" class="btn btn-success change-submint">确定</a>
+							<form class="content form-horizontal bv-form" novalidate="novalidate" action="">
+								<div class="form-group has-feedback change-pwd-con"><input type="password" class="form-control" name="old_pwd" data-bv-field="pwd" placeholder="旧密码"></div>
+								<div class="form-group has-feedback change-pwd-con"><input type="password" class="form-control" name="password" data-bv-field="password" placeholder="新密码"></div>
+								<div class="form-group has-feedback change-pwd-con"><input type="password" class="form-control" name="confirmPassword" data-bv-field="password" placeholder="确认密码"></div>
+								<button class="btn btn-success change-submint" type="submit">确定</button>
 							</form>
 						</div>
 					</div>
@@ -56,11 +56,10 @@
 				<p>Copyright &copy; 2015 - 京ICP备14019620号-2, All Rights Reserved One Work 版权所有 Support by OneWork</p>
 			</div>
 		</div>
-
-	</body>
-	<script src="js/jquery-2.14.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/myapp.js"></script>
+		<script src="js/jquery-2.14.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/myapp.js"></script>
+		<script src="js/bootstrapValidator.min.js"></script>
 	
 </body>
 </html>

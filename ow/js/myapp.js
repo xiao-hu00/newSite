@@ -274,6 +274,45 @@ $(function() {
                     }
                 }
             },
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: '新密码不能为空'
+                    },
+                    stringLength: {
+                        min: 6,
+                        //max: 30,
+                        message: '密码位数必须大于6位'
+                    },
+                    identical: {
+                        field: 'confirmPassword',
+                        message: '两次密码输入不一致'
+                    }
+                }
+            },
+            confirmPassword: {
+                validators: {
+                    notEmpty: {
+                        message: '确认密码不能为空'
+                    },
+                    stringLength: {
+                        min: 6,
+                        //max: 30,
+                        message: '密码位数必须大于6位'
+                    },
+                    identical: {
+                        field: 'password',
+                        message: '两次密码输入不一致'
+                    }
+                }
+            },
+            old_pwd:{
+                validators: {
+                    notEmpty: {
+                        message: '旧密码不能为空'
+                    }
+                }
+            },
         }
     });
 });
