@@ -113,13 +113,17 @@ $(function(){//操作文本域的，发送站内信
 $(function(){//认证用户列表相关js
     var t = $('.user-list-one > div').parent().height();
     if($(window).width()>768){
-        $('.user-list-one > div').eq(1).height(t);
-        $('.user-list-one > div').eq(2).height(t);
+        $('.user-list-one > div').height(t);
     }
     else{
         $('.user-list-one > div > div').css('position','static');
     }
     
+    var p = $('.user-nav-con > p');
+    p.on('click',function(){
+        var i = $(this).parent().index();
+        $(this).next().find('ul').slideToggle(200);
+    });
 });
 
 $(function() {

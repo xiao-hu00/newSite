@@ -4,6 +4,7 @@ ul,li{list-style-type: none;margin: 0;padding: 0;}
 .mart20{margin-top: 20px;}
 .btn-success{background-color: #63ce83;border-color: #63ce83;}
 .btn-success:hover{background-color: #5cb85c;border-color: #4cae4c;}
+.bg-white{background: #fff;}
 
 body{
 	font-size: 12px;
@@ -560,15 +561,28 @@ button:hover{background-color:#4dbe92;}
 
 /***认证用户列表 begin***/
 .progress-len{height: 8px;border-radius: 0;margin-bottom: 30px;}
+.user-list-nav{margin-top: -1px;padding-bottom: 30px;}
+.user-nav-con{color: #333;}
+.user-nav-con > p{font-size: 16px;margin-top: 20px;padding-left: 20px;cursor: pointer;margin-bottom: 0;padding-top: 10px;}
+.user-con-list > ul{overflow: hidden;width: 100%;margin-top: 10px;height: auto;display: none;padding-bottom: 20px;border-bottom: 1px solid #f0f0f0;padding-left: 10px;padding-right: 10px;}
+.user-nav-con:last-child > .user-con-list > ul{border-bottom: none;}
+.user-con-list > ul > li{float: left;padding: 5px 10px;}
+.user-con-list > ul > li > a{color: #333;font-size: 13px;}
+
 .user-list{margin-top: 10px;padding-left: 30px;}
 .user-list > .row{margin-left: 0;margin-right: 0;}
-.user-list-one{background: #fff;}
+.user-list-one{background: #fff;margin-bottom: 30px;}
 .user-list-one > div{padding-top: 15px;}
 .user-list-one > .unit-b{position: relative;border-left: 1px solid #eff5f6;border-right: 1px solid #eff5f6;padding-left: 0;padding-right: 0;}
 .user-list-one > .unit-b > div{border-top: 1px solid #eff5f6;overflow: hidden;position: absolute;bottom: 0;width: 100%;}
-.user-list-one > .unit-a{position: relative;text-align: center;}
-.user-list-one > .unit-a > a{position: absolute;bottom: 0;padding: 4px;}
-.mid-bottom > p{float: left;line-height: 48px;}
+.user-list-one > .unit-b > p{padding: 0 15px;}
+.user-list-one > .unit-a{text-align: center;height: auto;position: relative;}
+.user-list-one > .unit-a > button{bottom: 25px;position: absolute;left: 50%;margin-left: -34px;height: 33px;}
+.mid-bottom > p{float: left;line-height: 30px;color: #999;margin: 9px 0;font-size: 13px;}
+.mid-bottom > p:last-child{float: right;border-left: 1px solid #f0f0f0;margin-right: 20px;padding-left: 10px;}
+.mid-bottom > p > span:first-child{margin-left: 10px;margin-right: 7px;margin-top: 3px;}
+.mid-bottom > p > span:nth-child(2){margin-right: 20px;}
+
 /***认证用户列表 end***/
 
 /**修改密码 begin**/
@@ -588,6 +602,7 @@ button:hover{background-color:#4dbe92;}
 	.navigation-nav > ul > li:first-child{margin-left: 10px;}
 	.user-list{padding-left: 15px;}
 	.user-list-one > div:nth-child(2){border-left: none;border-right: none;padding-left: 0;padding-right: 0;border-bottom: 1px solid #eff5f6;border-top: 1px solid #eff5f6;}
+	.user-list-one > .unit-a > button{left: auto;right: 20px;top: 20px;margin-left: 0;bottom: auto;}
 
 }
 @media screen and (max-width:560px){
