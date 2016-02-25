@@ -121,6 +121,7 @@
 		<!-- Model -->
 		<div class="modal fade" id="myMessageModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
+		  <form action="post.html" method="post">
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -128,19 +129,20 @@
 		      </div>
 		      <div class="modal-body">
 		            <div class="form-group">
-		                <input type="text" class="form-control" placeholder="用户名">
+		                <input name="user" type="text" class="form-control" placeholder="用户名">
 		            </div>
 		            <div class="form-group">
-		                <input type="text" class="form-control" placeholder="标题">
+		                <input name="title" type="text" class="form-control" placeholder="标题">
 		            </div>
-		          <textarea class="form-control m-message">消息内容</textarea>
+		          <textarea name="content" class="form-control m-message">消息内容</textarea>
 		      </div>
 		      <div class="modal-footer">
 		        
-		        <button type="button" class="btn btn-success">发送</button>
+		        <button type="submit" class="btn btn-success">发送</button>
 		        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
 		      </div>
 		    </div>
+		    <form>
 		  </div>
 		</div>
 
