@@ -595,6 +595,16 @@ button:hover{background-color:#4dbe92;}
 .change-submint{width: 50%;margin: 30px 0;}
 /**修改密码 end**/
 
+/** 新－个人中心 begin***/
+.my-set-center{margin-top: 20px;position: relative;overflow: hidden;}
+.my-set-center > span{height: 42px;width: 2px;position: absolute;left: 15px;top: 0;display: block;z-index: 99;background: #63ce83;}
+.my-set-center > ul{background: #fff;border-radius: 4px;}
+.my-set-center > ul > li{line-height: 40px;border-bottom: 1px solid #f0f0f0;}
+.my-set-center > ul > li:last-child{border-bottom: none;}
+.my-set-center > ul > li > a{color: #666;font-size: 14px;width: 100%;display: inline-block;text-indent: 20px;}
+.my-set-center > ul > li > a:hover{color: #63ce83;}
+/** 新－个人中心 end***/
+
 /*** 媒体查询 部分css**/
 @media screen and (max-width:767px){
 	.modify-article{width: 90%;}
