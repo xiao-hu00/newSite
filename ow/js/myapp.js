@@ -48,8 +48,7 @@ $(function(){//操作DOM，交流页面2 中间部分导航效果
     }
     t.on("click",function(){
         var li = $(this).parent('li');
-        li.siblings().removeClass("act");
-        li.addClass("act");
+        li.addClass("act").siblings().removeClass("act");
         li.find('span').css('margin-left',li.width()/2 - 6);
     });
 
@@ -138,6 +137,17 @@ $(function(){//新－个人中心 右边菜单滑动事件
     });
     
 });
+
+$(function(){//横幅提示信息
+    if(!!$('.banner-text').attr('data-time')){
+        $('.banner-text').stop().animate({'height':50},300);
+        var time = $('.banner-text').attr('data-time');
+        setTimeout(function(){
+            $('.banner-text').stop().animate({'height':0},300);
+        },3000)
+    }
+});
+
 
 $(function() {
 	if($('.content').length != 1)return;

@@ -16,6 +16,9 @@ body{
 .header a:hover{color: #63ce83;}
 .navbar-nav > li > a:hover{color: #63ce83!important;}
 
+/*横幅提示*/
+.banner-text{width: 100%;margin-bottom: 20px;margin-top: -19px;background: #999;height: 0;overflow: hidden;}
+.banner-text > p{text-align: center;color: #fff;line-height: 50px;margin: 0;}
 
 
 /* nav部分 */
