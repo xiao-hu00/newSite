@@ -144,7 +144,7 @@ $(function(){//横幅提示信息
         var time = $('.banner-text').attr('data-time');
         setTimeout(function(){
             $('.banner-text').stop().animate({'height':0},300);
-        },3000)
+        },time)
     }
 });
 
