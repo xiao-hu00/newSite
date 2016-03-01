@@ -42,7 +42,7 @@ $(function(){//左边菜单点击   个人设置页面
 
 $(function(){//操作DOM，交流页面2 中间部分导航效果
     var t = $('.exchange-head > ul > li > a');
-    var lf = $('.exchange-head > ul > li').first().width()/2 - 6;
+    var lf = $('.exchange-head > ul > li.act').width()/2 - 6;
     if(!!t){
         t.next().css('margin-left',lf);
     }
