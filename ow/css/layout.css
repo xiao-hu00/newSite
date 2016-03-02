@@ -286,6 +286,7 @@ button:hover{background-color:#4dbe92;}
 .list-info > .unit-c{position: relative;margin-bottom: 20px;}
 .list-info > .unit-c > ul{background: #fff;overflow: hidden;height: 40px;border-radius: 3px;}
 .list-info > .unit-c > ul > li{float: left;width: 27%;text-align: center;line-height: 40px;margin: 0 3.16666%;cursor: pointer;}
+.list-info > .unit-c > ul > li.act{color: #63ce83;}
 .list-info > .unit-c > .line{height: 2px;position: absolute;background: #5cb85c;bottom: 0;}
 .list-info > .unit-d{padding: 20px;background: #fff;overflow: hidden;border-radius: 5px;display: none;}
 .list-info > .act{display: block;}
