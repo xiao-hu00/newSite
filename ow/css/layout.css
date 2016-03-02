@@ -12,8 +12,8 @@ body{
 	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 /*修改 填坑的呢*/
-.header a{color: #666;}
-.header a:hover{color: #63ce83;}
+.header > a{color: #666;display: block;}
+.header > a:hover{color: #63ce83;}
 .navbar-nav > li > a:hover{color: #63ce83!important;}
 
 /*横幅提示*/
@@ -28,9 +28,10 @@ body{
 .navbar-form input{height:28px;border-radius:14px;}
 .navbar-form button{width:20px;height:26px;color:#888;overflow:hidden;padding:3px;position:relative;margin-left: -33px;border:none;}
 .navbar-form button:hover{color:#000;background-color:#fff;}
-.header{line-height:60px;}
+.header{float: right;position: relative;line-height: 62px;}
 .header img{margin-right:10px;border-radius:50%;}
 .navbar-form{text-align: center;}
+.header-info{line-height: 1.5;position: absolute;background: #fff;top: 63px;width: 100%;text-align: center;z-index: 99;height: 0;overflow: hidden;}
 
 /* footer部分 */
 .footer{width:100%;background-color:#fff;padding:25px 0;}

@@ -1,13 +1,22 @@
+$(function(){//顶部头像
+    var w = $('.header-info').find('ul').height();
+	$('.header').hover(function(){
+        $('.header-info').stop().animate({'height':w},300);
+    },function(){
+        $('.header-info').stop().animate({'height':0},300);    
+    });
+});
+
 $(function(){//操作文本域的，评论
-	var t = $('.comments-text');
-	t.focus(function(){
-		if(t.val() == "你怎么看？")
-		t.val('');
-	}).blur(function(){
-		if(t.val() == "") {
-			t.val('你怎么看？');
-		};
-	});
+    var t = $('.comments-text');
+    t.focus(function(){
+        if(t.val() == "你怎么看？")
+        t.val('');
+    }).blur(function(){
+        if(t.val() == "") {
+            t.val('你怎么看？');
+        };
+    });
 });
 
 $(function(){//操作DOM，内页左边的菜单图标  个人设置页面
