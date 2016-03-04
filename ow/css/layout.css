@@ -631,6 +631,10 @@ button:hover{background-color:#4dbe92;}
 	.user-list{padding-left: 15px;}
 	.user-list-one > div:nth-child(2){border-left: none;border-right: none;padding-left: 0;padding-right: 0;border-bottom: 1px solid #eff5f6;border-top: 1px solid #eff5f6;}
 	.user-list-one > .unit-a > button{left: auto;right: 20px;top: 20px;margin-left: 0;bottom: auto;}
+	.nav > i{display: none!important;}
+	.header{margin-right: 0;}
+	.tiangle{display: none!important;}
+	.header-info{display: none;}
 
 }
 @media screen and (max-width:560px){
