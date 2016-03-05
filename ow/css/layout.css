@@ -2,6 +2,7 @@
 ul,li{list-style-type: none;margin: 0;padding: 0;}
 .copy .text-center{padding-left: 70px;}
 .mart20{margin-top: 20px;}
+.mart0{margin-top: 0!important;}
 .btn-success{background-color: #63ce83;border-color: #63ce83;}
 .btn-success:hover{background-color: #5cb85c;border-color: #4cae4c;}
 .bg-white{background: #fff;}
@@ -623,6 +624,31 @@ button:hover{background-color:#4dbe92;}
 .my-set-center > ul > li > a:hover{color: #63ce83;}
 /** 新－个人中心 end***/
 
+/** 激活成功 begin***/
+.activate-success{background: #fff;max-width: 900px;width: 80%;margin: 40px auto;text-align: center;border-radius: 4px;border: 1px solid #f0f0f0;}
+.activate-success > h2{font-weight: 400;color: #666;font-size: 22px;margin:  100px 0 40px;}
+.activate-success > a:last-child{display: inline-block;margin: 10px 0 100px;color: #666;}
+.activate-success > a:last-child:hover{color: #63ce83;}
+/** 激活成功 end***/
+
+/** 个人主页 end***/
+.homepage-side{padding-left: 15px;}
+.homepage-main{padding-right: 0;padding-left: 40px;}
+.homepage-head > ul > li > a{color: #999;}
+.homepage-head > ul > li > a:hover{color: #333;}
+.homepage-head > ul > li.act > a{color: #333;}
+.homepage-info{margin-left: 15px;margin-top: 10px;}
+.homepage-info > span{color: #63ce83;margin-left: 10px;}
+.homepage-info > span:last-child{color: #999;}
+.del-article{position: absolute;width: 32px;height: 32px;display: block;background: url('../images/del.png') no-repeat;right: 15px;top: 22px;}
+
+.homepage-all-info{margin-top: -20px;}
+.homepage-all-info > p > .p-title{border-radius: 3px;border: 1px solid #f0f0f0;color: #666;font-weight: 400;padding: 2px 5px;}
+.homepage-all-info > p{padding: 10px 0;margin: 0;border-bottom: 1px solid #f3f3f3;font-size: 13px;color: #999;}
+.homepage-all-info > p:last-child{border-bottom: none;margin-bottom: 10px;}
+.homepage-all-info > p > span{font-weight: 700;color: #333;}
+/** 个人主页 end***/
+
 /*** 媒体查询 部分css**/
 @media screen and (max-width:767px){
 	.modify-article{width: 90%;}
@@ -635,6 +661,8 @@ button:hover{background-color:#4dbe92;}
 	.header{margin-right: 0;}
 	.tiangle{display: none!important;}
 	.header-info{display: none;}
+	.homepage-side{padding-left: 0;margin-bottom: 40px;}
+	.homepage-main{padding-right: 15px;padding-left: 15px;}
 
 }
 @media screen and (max-width:560px){
