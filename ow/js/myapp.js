@@ -1,6 +1,6 @@
 $(function(){//顶部头像 滑过后效果等
     var w = $('.header-info').find('ul').outerHeight();
-	$('.header').hover(function(){
+	$('.personal-header').hover(function(){
         $('.header-info').stop().animate({'height':w},300);
         $('.tiangle').fadeIn(100);
     },function(){
@@ -28,11 +28,12 @@ $(function(){//顶部导航
     var t = $('.nav > li > a');
     var act = $('.nav > .act');
     i.css('width',t.width()+10);
+    i.css({'left':act.position().left+10,'width':act.find('a').width()+10});
     t.hover(function(){
         i.stop().animate({'left':$(this).parent().position().left+10,'width':$(this).width()+10},300);
         act.find('a').css({'color':'#777'});
     },function(){
-        i.stop().animate({'left':act.position().left+10,'width':act.find('a').width()+10},300)
+        i.stop().animate({'left':act.position().left+10,'width':act.find('a').width()+10},300);
         act.find('a').css({'color':'#63ce83'});
     });
 });
