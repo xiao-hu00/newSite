@@ -27,6 +27,7 @@ $(function(){//顶部导航
     var i = $('.nav > i');    
     var t = $('.nav > li > a');
     var act = $('.nav > .act');
+    if(i.length < 1)return;
     i.css('width',t.width()+10);
     i.css({'left':act.position().left+10,'width':act.find('a').width()+10});
     t.hover(function(){
@@ -180,12 +181,16 @@ $(function(){//新－个人中心 右边菜单滑动事件
 });
 
 $(function(){//横幅提示信息
-    if(!!$('.banner-text').attr('data-time')){
+    var time = $('.banner-text').attr('data-time');
+    if(!!time && time < 100000){
         $('.banner-text').stop().animate({'height':50},300);
-        var time = $('.banner-text').attr('data-time');
         setTimeout(function(){
             $('.banner-text').stop().animate({'height':0},300);
         },time)
+    }
+    if(time == 100000 || time > 100000){
+        $('.banner-text').css('background','#ff5350');
+        $('.banner-text').stop().animate({'height':50},300);        
     }
 });
 
