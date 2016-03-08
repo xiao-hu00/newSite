@@ -190,7 +190,10 @@ $(function(){//横幅提示信息
     }
     if(time == 100000 || time > 100000){
         $('.banner-text').css('background','#ff5350');
-        $('.banner-text').stop().animate({'height':50},300);        
+        $('.banner-text').stop().animate({'height':50},300);     
+        $('.banner-text > p > span').css('cursor','pointer').on('click',function(){
+            $('.banner-text').stop().animate({'height':0},300);
+        });
     }
 });
 
