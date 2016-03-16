@@ -23,6 +23,27 @@ $(function(){//顶部头像 滑过后效果等
     })
 });
 
+//新－个人主页
+$(function(){//顶部头像 滑过后效果等
+    var t = $('.new-personal-head > ul > li');    
+    var width = t.find('.act').width();
+    var line = $('.new-line');
+    if(!!t){
+        line.css({'width':width}).css({'left':t.parent().find('.act').position().left+15});
+        t.on('click',function(){
+            $(this).addClass('act').siblings().removeClass('act');
+        });
+        t.hover(function(){
+            line.stop().animate({'left':$(this).position().left+15},300);  
+            $('.header-info > ul > .act > a').css({'color':'#666'});
+        },function(){
+            line.stop().animate({'left':t.parent().find('.act').position().left+15},300);        
+            $('.header-info > ul > .act > a').css({'color':'#63ce83'});
+        })
+    }
+
+});
+
 $(function(){//顶部导航
     var i = $('.nav > i');    
     var t = $('.nav > li > a');
