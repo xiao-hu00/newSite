@@ -24,7 +24,7 @@ $(function(){//顶部头像 滑过后效果等
 });
 
 //新－个人主页
-$(function(){//顶部头像 滑过后效果等
+$(function(){
     var t = $('.new-personal-head > ul > li');    
     var width = t.find('.act').width();
     var line = $('.new-line');
@@ -32,6 +32,7 @@ $(function(){//顶部头像 滑过后效果等
         line.css({'width':width}).css({'left':t.parent().find('.act').position().left+15});
         t.on('click',function(){
             $(this).addClass('act').siblings().removeClass('act');
+            $('.new-hot-con > ul').eq($(this).index()).addClass('act').siblings().removeClass('act');
         });
         t.hover(function(){
             line.stop().animate({'left':$(this).position().left+15},300);  
