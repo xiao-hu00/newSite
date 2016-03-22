@@ -42,7 +42,11 @@ $(function(){
             $('.header-info > ul > .act > a').css({'color':'#63ce83'});
         })
     }
-
+    var ops = {//可以作为tooltip的参数，具体可以看其api介绍
+        title:"123213",
+        trigger:"hover"
+    }
+    $('.new-personal-name span[data-toggle="tooltip"]').tooltip();
 });
 
 $(function(){//顶部导航

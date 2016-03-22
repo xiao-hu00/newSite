@@ -717,6 +717,7 @@ margin-left:-100px;box-sizing:border-box;border:1px solid rgb(102,102,102);box-s
 .new-follow{margin-bottom: 20px;}
 .new-follow > a{width: 100%;border-radius: 3px;height: 39px;line-height: 24px;font-size: 14px;}
 
+
 /*** 媒体查询 部分css**/
 @media screen and (max-width:995px){
 	.change-avatar-right{float: left;}
