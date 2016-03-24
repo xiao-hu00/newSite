@@ -34,7 +34,9 @@
 
 			//插件调用 成功
 			$('#btn').on('click',function(){
-				$('#PopDialog').successPOP();
+				$('#PopDialog').successPOP({
+					text:"xxx"
+				});
 			});	
 
 			//插件调用 失败

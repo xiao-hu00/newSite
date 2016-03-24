@@ -28,7 +28,7 @@ $(function(){
     var t = $('.new-personal-head > ul > li');    
     var width = t.find('.act').width();
     var line = $('.new-line');
-    if(!!t){
+    if(!!t && line,length > 0){
         line.css({'width':width}).css({'left':t.parent().find('.act').position().left+15});
         t.on('click',function(){
             $(this).addClass('act').siblings().removeClass('act');
@@ -42,10 +42,10 @@ $(function(){
             $('.header-info > ul > .act > a').css({'color':'#63ce83'});
         })
     }
-    var ops = {//可以作为tooltip的参数，具体可以看其api介绍
-        title:"123213",
-        trigger:"hover"
-    }
+    // var ops = {//可以作为tooltip的参数，具体可以看其api介绍
+    //     title:"123213",
+    //     trigger:"hover"
+    // }
     $('.new-personal-name span[data-toggle="tooltip"]').tooltip();
 });
 
@@ -63,6 +63,24 @@ $(function(){//顶部导航
         i.stop().animate({'left':act.position().left+10,'width':act.find('a').width()+10},300);
         act.find('a').css({'color':'#63ce83'});
     });
+});
+
+$(function(){//关注粉丝列表
+    var t = $('.yes-focus');
+    var _this = this;
+    if(t.length < 1)return;
+    t.hover(function(){
+        _this.text = $(this).text();
+        _this.clas = $(this).find('span').attr('class');
+        $(this).find('i').text('取消关注');
+        $(this).addClass('no-focus');
+        $(this).find('span').attr('class','glyphicon glyphicon-minus');
+    },function(){
+        $(this).find('i').text(_this.text);
+        $(this).removeClass('no-focus');
+        $(this).find('span').attr('class',_this.clas);
+    });
+
 });
 
 $(function(){//操作文本域的，评论
