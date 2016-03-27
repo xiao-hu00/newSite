@@ -20,6 +20,8 @@ body{
 .collapse .nav > .act > a{color: #63ce83;}
 .nav > i{position: absolute;left: 10px;top: 61px;height: 2px;background: #63ce83;}
 
+.head-search{float: right;overflow: hidden;margin-right: 20px;}
+
 /*横幅提示*/
 .banner-text{width: 100%;margin-bottom: 20px;margin-top: -21px;background: #999;height: 0;overflow: hidden;}
 .banner-text > p{text-align: center;color: #fff;line-height: 50px;margin: 0;}
@@ -765,6 +767,9 @@ margin-left:-100px;box-sizing:border-box;border:1px solid rgb(102,102,102);box-s
 	.change-avatar{margin: 30px 15px;}
 	.change-avatar-right{margin-left: 20px;}
 	.my-fans{padding-left: 15px;padding-right: 15px;}
+	.head-search{float: none;width: 100%;}
+	.personal-header{margin-right: 15px;}
+	.head-search button:hover{background: #abcdef;}
 
 }
 @media screen and (max-width:560px){
