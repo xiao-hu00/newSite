@@ -28,7 +28,7 @@ $(function(){
     var t = $('.new-personal-head > ul > li');    
     var width = t.find('.act').width();
     var line = $('.new-line');
-    if(!!t && line,length > 0){
+    if(!!t && line.length > 0){
         line.css({'width':width}).css({'left':t.parent().find('.act').position().left+15});
         t.on('click',function(){
             $(this).addClass('act').siblings().removeClass('act');
