@@ -712,8 +712,9 @@ margin-left:-100px;box-sizing:border-box;border:1px solid rgb(102,102,102);box-s
 .new-personal-center-con > p{line-height: 1.7;color: #a4aeb5;font-size: 14px;}
 .new-personal-center > ul > li{overflow: hidden;padding:20px;}
 .new-personal-center{padding-bottom: 20px;}
-.new-personal-pro-left{float: left;width: 65px;height: 65px;border: 1px solid #eeeff1;text-align: center;margin-bottom: 20px;margin-left: 15px;}
-.new-personal-pro-left > p{color: #a9b7b7;font-size: 14px;margin-bottom: 0;font-size: 18px;line-height: 22px;}
+.new-personal-pro-left{float: left;width: 65px;height: 65px;border: 1px solid #eeeff1;text-align: center;margin-bottom: 20px;margin-left: 15px;transition: all .2s ease-in-out;-webkit-transition: all .2s ease-in-out;-moz-transition: all .2s ease-in-out;-o-transition: all .2s ease-in-out;color: #a9b7b7;display: block;}
+.new-personal-pro-left:hover{color: #fff;background: #39ca74;}
+.new-personal-pro-left > p{font-size: 14px;margin-bottom: 0;font-size: 18px;line-height: 22px;}
 .new-personal-pro-left > p:first-child{margin-top: 9px;}
 .new-personal-pro-right{float: left;padding-left: 20px;}
 .new-personal-pro-right > p:first-child > a{color: #2c3e50;font-size: 20px;transition: all .2s ease-in-out;-webkit-transition: all .2s ease-in-out;-moz-transition: all .2s ease-in-out;-o-transition: all .2s ease-in-out;}
