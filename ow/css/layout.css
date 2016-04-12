@@ -748,6 +748,10 @@ margin-left:-100px;box-sizing:border-box;border:1px solid rgb(102,102,102);box-s
 .change-page > p > a{margin-right: 5px;font-size: 13px;color: #9ba3af;transition: all .2s ease-in-out;-webkit-transition: all .2s ease-in-out;-moz-transition: all .2s ease-in-out;-o-transition: all .2s ease-in-out;}
 .change-page > p > a:hover{color: #39ca74;}
 
+/**  404页面 css **/
+.img-404{width: 628px;height: 352px;margin: 70px auto 1250px;background: #fff;border-radius: 10px;text-align: center;}
+.img-404 > img{margin-top: 30px;}
+
 /*** 媒体查询 部分css**/
 @media screen and (max-width:995px){
 	.change-avatar-right{float: left;}
@@ -771,7 +775,7 @@ margin-left:-100px;box-sizing:border-box;border:1px solid rgb(102,102,102);box-s
 	.head-search{float: none;width: 100%;}
 	.personal-header{margin-right: 15px;}
 	.head-search button:hover{background: #abcdef;}
-
+	.img-404{width: 100%;}
 }
 @media screen and (max-width:560px){
 	.navigation-info{margin: 30px 10px;}
