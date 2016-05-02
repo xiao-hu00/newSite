@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>测试用</title>
+  <script src="js/jquery-2.14.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style type="text/css">
+  *{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;color:#000;}
+.clear{font-size:0px;height:0px;clear:both;width:0px;overflow:hidden;}
+img{border:none;}
+body{font-size: 12px;font-family: "微软雅黑";}
+    .mb-ul li{float: left;width: 300px;margin-right: 20px;}
+    .img-list{width: 1000px;overflow: hidden;height: 220px;}
+  </style>
+</head>
+<body>
+  <div class="img-scroll">
+        <span class="prev"><img src="__PUBLIC__/images/c-l.jpg"></span>
+          <span class="next"><img src="__PUBLIC__/images/c-r.jpg"></span>
+            <div class="img-list">
+              <ul class="mb-ul">
+              <!-- <li><a><img src="__PUBLIC__/images/mt_19.jpg"></a></li> -->
+                  <li>
+                    <img src="images/x_pic1.png" alt="">
+                    <div class="new-index-pic-info">
+                      <p>远程外包团队TEAM</p>
+                      <p>多年外包经验，长期承接外包，团队成员来自大型互联网公司</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="images/x_pic2.png" alt="">
+                    <div class="new-index-pic-info">
+                      <p>远程外包团队TEAM</p>
+                      <p>多年外包经验，长期承接外包，团队成员来自大型互联网公司</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="images/x_pic3.png" alt="">
+                    <div class="new-index-pic-info">
+                      <p>远程外包团队TEAM</p>
+                      <p>多年外包经验，长期承接外包，团队成员来自大型互联网公司</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="images/x_pic2.png" alt="">
+                    <div class="new-index-pic-info">
+                      <p>远程外包团队TEAM</p>
+                      <p>多年外包经验，长期承接外包，团队成员来自大型互联网公司</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="images/x_pic3.png" alt="">
+                    <div class="new-index-pic-info">
+                      <p>远程外包团队TEAM</p>
+                      <p>多年外包经验，长期承接外包，团队成员来自大型互联网公司</p>
+                    </div>
+                  </li>
+                </ul>
+          </div>
+      </div>
+  <script type="text/javascript">//图片左右切换
+   function DY_scroll(wraper,prev,next,img,speed,or)
+   { 
+    var wraper = $(wraper);
+    var prev = $(prev);
+    var next = $(next);
+    var img = $(img).find('ul');
+    var w = img.find('li').outerWidth(true);
+    var s = speed;
+    next.click(function()
+         {
+          img.animate({'margin-left':-w},function()
+                    {
+                     img.find('li').eq(0).appendTo(img);
+                     img.css({'margin-left':0});
+                     });
+          });
+    prev.click(function()
+         {
+          img.find('li:last').prependTo(img);
+          img.css({'margin-left':-w});
+          img.animate({'margin-left':0});
+          });
+    if (or == true)
+    {
+     ad = setInterval(function() { next.click();},s*500);
+     wraper.hover(function(){clearInterval(ad);},function(){ad = setInterval(function() { next.click();},s*500);});
+
+    }
+   }
+   DY_scroll('.img-scroll','.prev','.next','.img-list',3,true);// true为自动播放，不加此参数或false就默认不自动
+  </script>
+</body>
+</html>

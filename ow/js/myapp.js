@@ -585,21 +585,24 @@ $(function(){
         right = $('.pic-tab-right'),
         box = $('.new-index-pic-box')
         len = li.length,
-        w = (li.innerWidth()+20)*len,
-        i = 1;
-        console.log(w)
+        w = (li.innerWidth()+20)*len;
+    left.click(function(){
+        ul.find('li:last').prependTo(ul);
+        ul.stop().animate({marginLeft:-(li.innerWidth()+20)},500);
+    });
+    right.click(function(){
+        ul.find('li').eq(0).appendTo(ul);
+        ul.stop().animate({marginLeft:-(li.innerWidth()+20)},500);
+    });
     var tab = function(){
-        li.first().stop().animate({marginLeft:-(li.innerWidth()+20)*i},500);
-        if(i == 1){
-            i = 2
-            $('.new-index-pic-box > ul > li').first().css('margin-left',0).appendTo(ul);
-            $('.new-index-pic-box > ul > li').first().remove();
-        }
+        ul.stop().animate({marginLeft:-(li.innerWidth()+20)},500,function(){
+            ul.find('li').eq(0).appendTo(ul);
+            ul.css({'margin-left':0});
+        });
     };
     var timer = setInterval(tab , 3000);
 
     box.hover(function(){
-        console.log(00)
         clearInterval(timer);
     },function(){
         timer = setInterval(tab , 3000);
