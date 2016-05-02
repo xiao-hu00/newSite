@@ -581,28 +581,31 @@ $(function(){
     if($('.new-index-pic-box > ul').length < 1)return;
     var ul = $('.new-index-pic-box > ul'),
         li = $('.new-index-pic-box > ul > li'),
+        tabbox = $('.new-index-pic-tab')
         left = $('.pic-tab-left'),
         right = $('.pic-tab-right'),
         box = $('.new-index-pic-box')
-        len = li.length,
-        w = (li.innerWidth()+20)*len;
+        w = (li.innerWidth()+20);
     left.click(function(){
         ul.find('li:last').prependTo(ul);
-        ul.stop().animate({marginLeft:-(li.innerWidth()+20)},500);
+        ul.css({'margin-left':-w});
+        ul.animate({'margin-left':0});
     });
     right.click(function(){
-        ul.find('li').eq(0).appendTo(ul);
-        ul.stop().animate({marginLeft:-(li.innerWidth()+20)},500);
+        ul.animate({'margin-left':-w},function(){
+            ul.find('li').eq(0).appendTo(ul);
+            ul.css({'margin-left':0});
+        });
     });
     var tab = function(){
-        ul.stop().animate({marginLeft:-(li.innerWidth()+20)},500,function(){
+        ul.stop().animate({marginLeft:-w},500,function(){
             ul.find('li').eq(0).appendTo(ul);
             ul.css({'margin-left':0});
         });
     };
     var timer = setInterval(tab , 3000);
 
-    box.hover(function(){
+    tabbox.hover(function(){
         clearInterval(timer);
     },function(){
         timer = setInterval(tab , 3000);
